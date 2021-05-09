@@ -26,7 +26,7 @@ function DonutChart() {
       
         });
 
-    } , [])
+    } , []);
    
 
     //const mockData = {
