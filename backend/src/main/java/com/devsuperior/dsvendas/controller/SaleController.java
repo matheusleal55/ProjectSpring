@@ -16,7 +16,7 @@ import com.devsuperior.dsvendas.DTO.SaleSumDTO;
 import com.devsuperior.dsvendas.services.SaleService;
 
 @RestController
-@RequestMapping(value = "/sale")
+@RequestMapping(value = "/sales")
 public class SaleController {
 	
 	
@@ -29,7 +29,7 @@ public class SaleController {
 		return ResponseEntity.ok(list);
 		}
 	
-	@GetMapping(value = "/sum-by-seller")
+	@GetMapping(value = "/amount-by-seller")
 	public ResponseEntity<List<SaleSumDTO>> amountGroupedBySeller() {
 		List<SaleSumDTO> list = service.amountGroupedBySeller();
 		return ResponseEntity.ok(list);
